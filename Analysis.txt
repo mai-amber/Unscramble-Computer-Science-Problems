@@ -1,0 +1,17 @@
+
+Worst Case Time Complexity Analysis
+
+Task 0: Worst Case Complexity: O(1)
+This task involves no loops at all, there is no change to the run time that is dependent on the input, so this worst case scenario is O(1)
+
+Task 1: Worst Case Complexity: O(n)
+The solution for this task includes two for loops meaning that the complexity is dependent on the size of the input, so the worst case scenario is O(n) 
+
+Task 2: Worst Case Complexity: O(n)
+The solution for this task includes one for loop, meaning that the complexity is dependent on the size of the input, so the worst case scenario is O(n) 
+
+Task 3: Worst Case Complexity: O(n log(n))
+Sorted was used in completing this task, so this code's worst case scenario is like that of sorted, with a time complexity of O(n log(n))
+
+Task 4: Worst Case Complexity: O(n log(n))
+Sorted was used in completing this task, so this code's worst case scenario is like that of sorted, with a time complexity of O(n log(n))
