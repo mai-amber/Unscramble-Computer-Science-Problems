@@ -52,7 +52,7 @@ codes_list = []
 for call in calls:
     if call[0].startswith("(080)"):
         if call[1].startswith("(0"):                   
-            x = call[1].find(')')  
+            x = call[1].find(')')+1  
             codes_list.append(call[1][0:x])
         if call[1].startswith("140"):    
             codes_list.append("140")
@@ -70,17 +70,16 @@ for code in sorted(set(codes_list)):
 Bangalore = 0
 not_Bangalore = 0
 
+
 for call in calls:
+    if call[0].startswith("(080)"):
+        if call[1].startswith("(080)"):
+            Bangalore += 1
+        else:
+            not_Bangalore += 1
 
-    if call[0][:5] == "(080)" and call[1][:5] == "(080)":
-        Bangalore += 1
-    if call[0][:5] == "(080)" and not call[1][:5] == "(080)":
-        Bangalore += 1
-        not_Bangalore += 1
-
-percent = (Bangalore/(not_Bangalore + Bangalore))
+percent = (Bangalore/(Bangalore + not_Bangalore)) * 100
 
 print("{} percent of calls from fixed lines in Bangalore are calls to other fixed lines in Bangalore.".format(round(percent, 2)))
-        
-        
+               
 
