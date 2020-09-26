@@ -13,5 +13,5 @@ The solution for this task includes one for loop, meaning that the complexity is
 Task 3: Worst Case Complexity: O(n log(n))
 Sorted was used in completing this task, so this code's worst case scenario is like that of sorted, with a time complexity of O(n log(n))
 
-Task 4: Worst Case Complexity: O(n log(n))
-Sorted was used in completing this task, so this code's worst case scenario is like that of sorted, with a time complexity of O(n log(n))
+Task 4: Worst Case Complexity: O(n^2)
+Sorted was used in completing this task, with a time complexity of O(n log(n)), but in addition the solution to this task includes for loops meaning that the complexity is dependent on the size of the input, and also searching elements in a list, also dependent on the size of the input, for a worst case time complexity of O(n^2)
